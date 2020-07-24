@@ -12,8 +12,8 @@ def count_th(word):
    # so want to count how often "th" occurs in a word, using recursion
     if len(word) == 0:
         return 0
-   # want to iterate through the word, from back to front, taking away 1 letter at a time, 
-   # until you reach 1 letter, at which point, terminate function, return count
+   # want to iterate through the word, from front to back, taking away 1 letter at a time from the front, 
+   # until you reach 1 letter, at which point, terminate function, returns total count 
    #      
     if len(word) > 1 and word[0:2] == token:
         return 1 + count_th(word[1:])
